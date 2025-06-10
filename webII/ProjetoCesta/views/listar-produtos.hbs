@@ -1,0 +1,29 @@
+<h1>Lista de Produtos Cadastrados</h1>
+
+<table border="1" style="width:100%; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+            <th>Categoria</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each produtos}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.nome}}</td>
+                <td>R$ {{this.preco}}</td>
+                <td>{{this.quantidade_estoque}}</td>
+                <td>{{this.categoria}}</td>
+                <td>
+                    <a href="/produtos/editar/{{this.id}}">Editar</a>
+                    <a href="/produtos/excluir/{{this.id}}">Excluir</a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,83 @@
+# ─────────────────────────────────────────
+# Dependências de Node
+node_modules/
+# Bloqueios (se estiver usando apenas um gerenciador, mantenha seu lock e ignore os demais)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─────────────────────────────────────────
+# React Native / Expo
+.expo/
+.expo-shared/
+
+# ─────────────────────────────────────────
+# iOS (Xcode)
+ios/Pods/
+ios/build/
+project.xcworkspace/
+xcuserdata/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+# Certificados e chaves
+*.p12
+*.mobileprovision
+*.xcarchive
+
+# ─────────────────────────────────────────
+# Android (Gradle)
+android/.gradle/
+android/build/
+android/app/build/
+.gradle/
+local.properties          # contém caminho do SDK local
+*.iml
+*.keystore
+
+# ─────────────────────────────────────────
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# ─────────────────────────────────────────
+# Testes e cobertura
+coverage/
+*.lcov
+jest-html-reporters-*
+cypress/videos/
+cypress/screenshots/
+
+# ─────────────────────────────────────────
+# Variáveis de ambiente
+.env
+.env.*.local
+*.env
+
+# ─────────────────────────────────────────
+# Saídas de build/web
+build/
+dist/
+build-*/
+
+# ─────────────────────────────────────────
+# IDEs & SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
